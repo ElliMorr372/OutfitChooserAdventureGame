@@ -128,5 +128,35 @@
   <ItemGroup>
     <None Include="Resources\blouseOption.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heelsOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootsOption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knee-highBootsOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackAnkleBootOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackHeelsOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flatsOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweatpantsOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\long-sleeveOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\longSleeveOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\longSleeveOption.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

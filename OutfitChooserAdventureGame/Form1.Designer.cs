@@ -36,6 +36,17 @@
             this.option2Label = new System.Windows.Forms.Label();
             this.option3Label = new System.Windows.Forms.Label();
             this.option3Button = new System.Windows.Forms.Button();
+            this.longSleeveOption2Image = new System.Windows.Forms.PictureBox();
+            this.sweatpantsOption2Image = new System.Windows.Forms.PictureBox();
+            this.flatsOption2Image = new System.Windows.Forms.PictureBox();
+            this.kneeBootsOption2Image = new System.Windows.Forms.PictureBox();
+            this.blackHeelsOption1Image = new System.Windows.Forms.PictureBox();
+            this.casualBootsOption2Image = new System.Windows.Forms.PictureBox();
+            this.fancyBootsOption2Image = new System.Windows.Forms.PictureBox();
+            this.nudeHeelsOption1Image = new System.Windows.Forms.PictureBox();
+            this.sweaterOption2Image = new System.Windows.Forms.PictureBox();
+            this.blouseOption1Image = new System.Windows.Forms.PictureBox();
+            this.silverOption2Image = new System.Windows.Forms.PictureBox();
             this.patternedSkirtOption1Image = new System.Windows.Forms.PictureBox();
             this.plainSkirtOption2Image = new System.Windows.Forms.PictureBox();
             this.skirtOption2Image = new System.Windows.Forms.PictureBox();
@@ -46,7 +57,17 @@
             this.fancyOption2Image = new System.Windows.Forms.PictureBox();
             this.sneakersOption1Image = new System.Windows.Forms.PictureBox();
             this.goldOption1Image = new System.Windows.Forms.PictureBox();
-            this.silverOption2Image = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.longSleeveOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sweatpantsOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flatsOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kneeBootsOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackHeelsOption1Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.casualBootsOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fancyBootsOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudeHeelsOption1Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sweaterOption2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blouseOption1Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.silverOption2Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patternedSkirtOption1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plainSkirtOption2Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skirtOption2Image)).BeginInit();
@@ -57,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fancyOption2Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sneakersOption1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goldOption1Image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.silverOption2Image)).BeginInit();
             this.SuspendLayout();
             // 
             // option1Button
@@ -65,7 +85,7 @@
             this.option1Button.AllowDrop = true;
             this.option1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Button.Location = new System.Drawing.Point(131, 280);
-            this.option1Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.option1Button.Margin = new System.Windows.Forms.Padding(2);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(76, 30);
             this.option1Button.TabIndex = 0;
@@ -77,7 +97,7 @@
             // 
             this.option2Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Button.Location = new System.Drawing.Point(131, 313);
-            this.option2Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.option2Button.Margin = new System.Windows.Forms.Padding(2);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(75, 29);
             this.option2Button.TabIndex = 1;
@@ -134,13 +154,123 @@
             // 
             this.option3Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option3Button.Location = new System.Drawing.Point(131, 346);
-            this.option3Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.option3Button.Margin = new System.Windows.Forms.Padding(2);
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(75, 29);
             this.option3Button.TabIndex = 5;
             this.option3Button.Text = ">";
             this.option3Button.UseVisualStyleBackColor = true;
             this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
+            // 
+            // longSleeveOption2Image
+            // 
+            this.longSleeveOption2Image.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("longSleeveOption2Image.BackgroundImage")));
+            this.longSleeveOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.longSleeveOption2Image.Location = new System.Drawing.Point(242, 68);
+            this.longSleeveOption2Image.Name = "longSleeveOption2Image";
+            this.longSleeveOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.longSleeveOption2Image.TabIndex = 27;
+            this.longSleeveOption2Image.TabStop = false;
+            // 
+            // sweatpantsOption2Image
+            // 
+            this.sweatpantsOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.sweatpantsOption;
+            this.sweatpantsOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sweatpantsOption2Image.Location = new System.Drawing.Point(242, 68);
+            this.sweatpantsOption2Image.Name = "sweatpantsOption2Image";
+            this.sweatpantsOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.sweatpantsOption2Image.TabIndex = 26;
+            this.sweatpantsOption2Image.TabStop = false;
+            // 
+            // flatsOption2Image
+            // 
+            this.flatsOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.flatsOption;
+            this.flatsOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flatsOption2Image.Location = new System.Drawing.Point(243, 69);
+            this.flatsOption2Image.Name = "flatsOption2Image";
+            this.flatsOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.flatsOption2Image.TabIndex = 25;
+            this.flatsOption2Image.TabStop = false;
+            // 
+            // kneeBootsOption2Image
+            // 
+            this.kneeBootsOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.knee_highBootsOption;
+            this.kneeBootsOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.kneeBootsOption2Image.Location = new System.Drawing.Point(243, 68);
+            this.kneeBootsOption2Image.Name = "kneeBootsOption2Image";
+            this.kneeBootsOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.kneeBootsOption2Image.TabIndex = 24;
+            this.kneeBootsOption2Image.TabStop = false;
+            // 
+            // blackHeelsOption1Image
+            // 
+            this.blackHeelsOption1Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.blackHeelsOption;
+            this.blackHeelsOption1Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.blackHeelsOption1Image.Location = new System.Drawing.Point(31, 68);
+            this.blackHeelsOption1Image.Name = "blackHeelsOption1Image";
+            this.blackHeelsOption1Image.Size = new System.Drawing.Size(176, 199);
+            this.blackHeelsOption1Image.TabIndex = 23;
+            this.blackHeelsOption1Image.TabStop = false;
+            // 
+            // casualBootsOption2Image
+            // 
+            this.casualBootsOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.blackAnkleBootOption;
+            this.casualBootsOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.casualBootsOption2Image.Location = new System.Drawing.Point(243, 69);
+            this.casualBootsOption2Image.Name = "casualBootsOption2Image";
+            this.casualBootsOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.casualBootsOption2Image.TabIndex = 22;
+            this.casualBootsOption2Image.TabStop = false;
+            // 
+            // fancyBootsOption2Image
+            // 
+            this.fancyBootsOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.bootsOption;
+            this.fancyBootsOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fancyBootsOption2Image.Location = new System.Drawing.Point(243, 68);
+            this.fancyBootsOption2Image.Name = "fancyBootsOption2Image";
+            this.fancyBootsOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.fancyBootsOption2Image.TabIndex = 21;
+            this.fancyBootsOption2Image.TabStop = false;
+            // 
+            // nudeHeelsOption1Image
+            // 
+            this.nudeHeelsOption1Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.heelsOption;
+            this.nudeHeelsOption1Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.nudeHeelsOption1Image.Location = new System.Drawing.Point(31, 68);
+            this.nudeHeelsOption1Image.Name = "nudeHeelsOption1Image";
+            this.nudeHeelsOption1Image.Size = new System.Drawing.Size(176, 199);
+            this.nudeHeelsOption1Image.TabIndex = 20;
+            this.nudeHeelsOption1Image.TabStop = false;
+            // 
+            // sweaterOption2Image
+            // 
+            this.sweaterOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.sweaterOption;
+            this.sweaterOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sweaterOption2Image.Location = new System.Drawing.Point(243, 68);
+            this.sweaterOption2Image.Name = "sweaterOption2Image";
+            this.sweaterOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.sweaterOption2Image.TabIndex = 19;
+            this.sweaterOption2Image.TabStop = false;
+            // 
+            // blouseOption1Image
+            // 
+            this.blouseOption1Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.blouseOption;
+            this.blouseOption1Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.blouseOption1Image.Location = new System.Drawing.Point(29, 68);
+            this.blouseOption1Image.Name = "blouseOption1Image";
+            this.blouseOption1Image.Size = new System.Drawing.Size(176, 199);
+            this.blouseOption1Image.TabIndex = 18;
+            this.blouseOption1Image.TabStop = false;
+            // 
+            // silverOption2Image
+            // 
+            this.silverOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.silverJewelryOption;
+            this.silverOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.silverOption2Image.Location = new System.Drawing.Point(243, 69);
+            this.silverOption2Image.Name = "silverOption2Image";
+            this.silverOption2Image.Size = new System.Drawing.Size(176, 199);
+            this.silverOption2Image.TabIndex = 17;
+            this.silverOption2Image.TabStop = false;
             // 
             // patternedSkirtOption1Image
             // 
@@ -242,22 +372,22 @@
             this.goldOption1Image.TabIndex = 8;
             this.goldOption1Image.TabStop = false;
             // 
-            // silverOption2Image
-            // 
-            this.silverOption2Image.BackgroundImage = global::OutfitChooserAdventureGame.Properties.Resources.silverJewelryOption;
-            this.silverOption2Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.silverOption2Image.Location = new System.Drawing.Point(243, 69);
-            this.silverOption2Image.Name = "silverOption2Image";
-            this.silverOption2Image.Size = new System.Drawing.Size(176, 199);
-            this.silverOption2Image.TabIndex = 17;
-            this.silverOption2Image.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(442, 384);
+            this.Controls.Add(this.longSleeveOption2Image);
+            this.Controls.Add(this.sweatpantsOption2Image);
+            this.Controls.Add(this.flatsOption2Image);
+            this.Controls.Add(this.kneeBootsOption2Image);
+            this.Controls.Add(this.blackHeelsOption1Image);
+            this.Controls.Add(this.casualBootsOption2Image);
+            this.Controls.Add(this.fancyBootsOption2Image);
+            this.Controls.Add(this.nudeHeelsOption1Image);
+            this.Controls.Add(this.sweaterOption2Image);
+            this.Controls.Add(this.blouseOption1Image);
             this.Controls.Add(this.silverOption2Image);
             this.Controls.Add(this.patternedSkirtOption1Image);
             this.Controls.Add(this.plainSkirtOption2Image);
@@ -276,8 +406,19 @@
             this.Controls.Add(this.storyOutputLabel);
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.longSleeveOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sweatpantsOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flatsOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kneeBootsOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackHeelsOption1Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.casualBootsOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fancyBootsOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudeHeelsOption1Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sweaterOption2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blouseOption1Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.silverOption2Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patternedSkirtOption1Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plainSkirtOption2Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skirtOption2Image)).EndInit();
@@ -288,7 +429,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fancyOption2Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sneakersOption1Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goldOption1Image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.silverOption2Image)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,6 +453,16 @@
         private System.Windows.Forms.PictureBox plainSkirtOption2Image;
         private System.Windows.Forms.PictureBox patternedSkirtOption1Image;
         private System.Windows.Forms.PictureBox silverOption2Image;
+        private System.Windows.Forms.PictureBox blouseOption1Image;
+        private System.Windows.Forms.PictureBox sweaterOption2Image;
+        private System.Windows.Forms.PictureBox nudeHeelsOption1Image;
+        private System.Windows.Forms.PictureBox fancyBootsOption2Image;
+        private System.Windows.Forms.PictureBox casualBootsOption2Image;
+        private System.Windows.Forms.PictureBox blackHeelsOption1Image;
+        private System.Windows.Forms.PictureBox kneeBootsOption2Image;
+        private System.Windows.Forms.PictureBox flatsOption2Image;
+        private System.Windows.Forms.PictureBox sweatpantsOption2Image;
+        private System.Windows.Forms.PictureBox longSleeveOption2Image;
     }
 }
 

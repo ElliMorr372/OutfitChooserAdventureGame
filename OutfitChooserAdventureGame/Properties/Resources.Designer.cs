@@ -63,9 +63,39 @@ namespace OutfitChooserAdventureGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blackAnkleBootOption {
+            get {
+                object obj = ResourceManager.GetObject("blackAnkleBootOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blackHeelsOption {
+            get {
+                object obj = ResourceManager.GetObject("blackHeelsOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blouseOption {
             get {
                 object obj = ResourceManager.GetObject("blouseOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bootsOption {
+            get {
+                object obj = ResourceManager.GetObject("bootsOption", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +133,16 @@ namespace OutfitChooserAdventureGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flatsOption {
+            get {
+                object obj = ResourceManager.GetObject("flatsOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap goldJewelry {
             get {
                 object obj = ResourceManager.GetObject("goldJewelry", resourceCulture);
@@ -123,9 +163,39 @@ namespace OutfitChooserAdventureGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heelsOption {
+            get {
+                object obj = ResourceManager.GetObject("heelsOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jeansOption {
             get {
                 object obj = ResourceManager.GetObject("jeansOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap knee_highBootsOption {
+            get {
+                object obj = ResourceManager.GetObject("knee_highBootsOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap longSleeveOption {
+            get {
+                object obj = ResourceManager.GetObject("longSleeveOption", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +256,16 @@ namespace OutfitChooserAdventureGame.Properties {
         internal static System.Drawing.Bitmap sweaterOption {
             get {
                 object obj = ResourceManager.GetObject("sweaterOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sweatpantsOption {
+            get {
+                object obj = ResourceManager.GetObject("sweatpantsOption", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
