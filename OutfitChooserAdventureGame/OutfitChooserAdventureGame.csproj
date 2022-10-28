@@ -158,5 +158,26 @@
   <ItemGroup>
     <None Include="Resources\longSleeveOption.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shortDressOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\longDressOption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limoEnding.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodFriendEnding.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badFriendEnding.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstChoice.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrug.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

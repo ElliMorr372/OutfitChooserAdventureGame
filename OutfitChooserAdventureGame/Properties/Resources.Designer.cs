@@ -61,6 +61,15 @@ namespace OutfitChooserAdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream badFriendEnding {
+            get {
+                return ResourceManager.GetStream("badFriendEnding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap blackAnkleBootOption {
@@ -131,6 +140,15 @@ namespace OutfitChooserAdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream firstChoice {
+            get {
+                return ResourceManager.GetStream("firstChoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap flatsOption {
@@ -147,6 +165,15 @@ namespace OutfitChooserAdventureGame.Properties {
             get {
                 object obj = ResourceManager.GetObject("goldJewelry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream goodFriendEnding {
+            get {
+                return ResourceManager.GetStream("goodFriendEnding", resourceCulture);
             }
         }
         
@@ -191,6 +218,25 @@ namespace OutfitChooserAdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream limoEnding {
+            get {
+                return ResourceManager.GetStream("limoEnding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap longDressOption {
+            get {
+                object obj = ResourceManager.GetObject("longDressOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap longSleeveOption {
@@ -216,6 +262,26 @@ namespace OutfitChooserAdventureGame.Properties {
         internal static System.Drawing.Bitmap plainSkirtOption {
             get {
                 object obj = ResourceManager.GetObject("plainSkirtOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shortDressOption {
+            get {
+                object obj = ResourceManager.GetObject("shortDressOption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shrug {
+            get {
+                object obj = ResourceManager.GetObject("shrug", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
