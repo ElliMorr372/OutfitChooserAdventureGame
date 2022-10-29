@@ -11,7 +11,7 @@ using System.Threading;
 using System.Media;
 
 //Elliana Morrison
-//October 27thth, 2022
+//October 28thth, 2022
 //Simple outfit chooser
 
 namespace OutfitChooserAdventureGame
@@ -21,6 +21,7 @@ namespace OutfitChooserAdventureGame
         int page = 1;
         public form1()
         {
+            //Setup opening page, disable everything else
             InitializeComponent();
             storyOutputLabel.Text = "You are invited to your best friend's birthday party. What type of outfit do you want to wear?";
             option1Label.Text = "Casual";
@@ -60,8 +61,8 @@ namespace OutfitChooserAdventureGame
 
         private void option1Button_Click(object sender, EventArgs e)
         {
-            /// Check what page we are currently on, and then flip
-            /// to the page you need to go to if you selected option 1
+            // Check what page we are currently on, and then flip
+            // to the page you need to go to if you selected option 1
 
             if (page == 1)
             {
@@ -193,8 +194,7 @@ namespace OutfitChooserAdventureGame
                 page = 21;
             }
 
-            /// Display text and game options to screen based on the 
-            /// current page
+            // Display text, images, play sounds and game options based on the current page
 
             switch (page)
             {
@@ -548,8 +548,8 @@ namespace OutfitChooserAdventureGame
         }
         private void option2Button_Click(object sender, EventArgs e)
         {
-            /// Check what page we are currently on, and then flip
-            /// to the page you need to go to if you selected option 2
+            // Check what page we are currently on, and then flip
+            // to the page you need to go to if you selected option 2
 
             if (page == 1)
             {
@@ -681,8 +681,7 @@ namespace OutfitChooserAdventureGame
                 page = 21;
             }
 
-            /// Display text and game options to screen based on the 
-            /// current page
+            // Display text, images, play sounds and game options based on the current page
 
             switch (page)
             {
@@ -1037,14 +1036,15 @@ namespace OutfitChooserAdventureGame
 
         private void option3Button_Click(object sender, EventArgs e)
         {
-            /// Check what page we are currently on, and then flip
-            /// to the page you need to go to if you selected option 3
+            // Check what page we are currently on, and then flip
+            // to the page you need to go to if you selected option 3
 
             if (page == 11)
             {
                 page = 20;
             }
 
+            // Display text, images, play sounds and game options based on the current page
             switch (page)
             {
                 case 1:
