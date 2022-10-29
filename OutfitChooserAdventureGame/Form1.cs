@@ -16,10 +16,10 @@ using System.Media;
 
 namespace OutfitChooserAdventureGame
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
         int page = 1;
-        public Form1()
+        public form1()
         {
             InitializeComponent();
             storyOutputLabel.Text = "You are invited to your best friend's birthday party. What type of outfit do you want to wear?";
@@ -38,6 +38,7 @@ namespace OutfitChooserAdventureGame
             nudeHeelsOption1Image.Visible = false;
             blackHeelsOption1Image.Visible = false;
             longDressOption1Image.Visible = false;
+            limoOption1Image.Visible = false;
             casualOption1Image.Visible = true;
             //option 2 images
             skirtOption2Image.Visible = false;
@@ -52,8 +53,9 @@ namespace OutfitChooserAdventureGame
             longSleeveOption2Image.Visible = false;
             shortDressOption2Image.Visible = false;
             shrugOption2Image.Visible = false;
+            badDecisionOption2Image.Visible = false;
+            cakeOption2Image.Visible = false;
             fancyOption2Image.Visible = true;
-            //play opening sound
         }
 
         private void option1Button_Click(object sender, EventArgs e)
@@ -211,6 +213,7 @@ namespace OutfitChooserAdventureGame
                     nudeHeelsOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = false;
                     longDressOption1Image.Visible = false;
+                    limoOption1Image.Visible = false;
                     casualOption1Image.Visible = true;
                     //option 2 images
                     skirtOption2Image.Visible = false;
@@ -225,17 +228,16 @@ namespace OutfitChooserAdventureGame
                     longSleeveOption2Image.Visible = false;
                     shortDressOption2Image.Visible = false;
                     shrugOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = false;
+                    cakeOption2Image.Visible = false;
                     fancyOption2Image.Visible = true;
-                    //play opening sound
                     break;
                 case 2:
                     storyOutputLabel.Text = "So, you are going casual, but how casual??";
                     option1Label.Text = "Jeans";
                     option2Label.Text = "Sweatpants";
-
                     casualOption1Image.Visible = false;
                     jeansOption1Image.Visible = true;
-
                     fancyOption2Image.Visible = false;
                     sweatpantsOption2Image.Visible = true;
                     SoundPlayer firstChoice = new SoundPlayer(Properties.Resources.firstChoice);
@@ -245,10 +247,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Ooh, you are going fancy! What makes you feel the fanciest?";
                     option1Label.Text = "Dress";
                     option2Label.Text = "Skirt";
-
                     fancyOption2Image.Visible = false;
                     dressOption1Image.Visible = true;
-
                     casualOption1Image.Visible = false;
                     skirtOption2Image.Visible = true;
                     break;
@@ -256,10 +256,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice, jeans are a respectable choice. Now choose a top...";
                     option1Label.Text = "Graphic Tee";
                     option2Label.Text = "Plain long-sleeve";
-
                     jeansOption1Image.Visible = false;
                     teeOption1Image.Visible = true;
-
                     sweatpantsOption2Image.Visible = false;
                     longSleeveOption2Image.Visible = true;
                     break;
@@ -267,18 +265,16 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Really? Sweatpants to your best friend's birthday party... Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     jeansOption1Image.Visible = false;
                     sweatpantsOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = true;
                     break;
                 case 6:
                     storyOutputLabel.Text = "What length of dress is the vibe?";
                     option1Label.Text = "Short";
                     option2Label.Text = "Long";
-
                     dressOption1Image.Visible = false;
                     longDressOption1Image.Visible = true;
-
                     skirtOption2Image.Visible = false;
                     shortDressOption2Image.Visible = true;
                     break;
@@ -286,10 +282,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Okay, but how interesting do you want your skirt to be?";
                     option1Label.Text = "Patterned";
                     option2Label.Text = "Plain";
-
                     dressOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = true;
-
                     skirtOption2Image.Visible = false;
                     plainSkirtOption2Image.Visible = true;
                     break;
@@ -297,10 +291,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Cute! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     teeOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     longSleeveOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -308,19 +300,16 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "That's a bit boring.. Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     teeOption1Image.Visible = false;
-
                     longSleeveOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = true;
                     break;
                 case 10:
                     storyOutputLabel.Text = "Nice bold choice. Now, what type of jewelry would you like to compliment your look?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     longDressOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     shortDressOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -329,10 +318,10 @@ namespace OutfitChooserAdventureGame
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
                     option3Label.Text = "None";
-
+                    option3Label.Visible = true;
+                    option3Button.Visible = true;
                     longDressOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     shortDressOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -340,11 +329,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Exciting, now what type of top do you want?";
                     option1Label.Text = "Blouse";
                     option2Label.Text = "Sweater";
-
                     goldOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = false;
                     blouseOption1Image.Visible = true;
-
                     plainSkirtOption2Image.Visible = false;
                     silverOption2Image.Visible = false;
                     sweaterOption2Image.Visible = true;
@@ -353,11 +340,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Strong choice, now what type of top do you want?";
                     option1Label.Text = "Blouse";
                     option2Label.Text = "Sweater";
-
                     goldOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = false;
                     blouseOption1Image.Visible = true;
-
                     plainSkirtOption2Image.Visible = false;
                     silverOption2Image.Visible = false;
                     sweaterOption2Image.Visible = true;
@@ -366,11 +351,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Alright, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     teeOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     longSleeveOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
@@ -379,10 +362,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
                     break;
@@ -390,10 +371,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good bold choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -401,10 +380,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice. Now what type of footwear would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -412,10 +389,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice bold choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -423,10 +400,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -434,10 +411,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Respectable choice. Now final step, what footwear would you like to wear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -445,11 +422,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, quite fashionable! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     sneakersOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = false;
-
                     fancyBootsOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = false;
@@ -460,10 +435,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Fancy! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     blouseOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     sweaterOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -471,10 +444,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Cute! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     blouseOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     sweaterOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -482,10 +453,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now final decision...What type of footwear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Heeled boots";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     fancyBootsOption2Image.Visible = true;
                     break;
@@ -493,10 +462,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice choice, now finally... decision...What type of shoes?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Heeled boots";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     fancyBootsOption2Image.Visible = true;
                     break;
@@ -504,10 +471,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now finally...What type of footwear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Flats";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     flatsOption2Image.Visible = true;
                     break;
@@ -515,10 +480,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now finally...What type of shoes?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Flats";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     flatsOption2Image.Visible = true;
                     break;
@@ -526,7 +489,6 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Perfect choice, you have great style! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     nudeHeelsOption1Image.Visible = false;
                     fancyBootsOption2Image.Visible = false;
                     shrugOption2Image.Visible = true;
@@ -535,10 +497,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Perfect choice, you have such great style that your best friend rents a limo for you to arrive in! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     nudeHeelsOption1Image.Visible = false;
                     fancyBootsOption2Image.Visible = false;
-                    shrugOption2Image.Visible = true;
+                    limoOption1Image.Visible = true;
                     SoundPlayer limoEnding = new SoundPlayer(Properties.Resources.limoEnding);
                     limoEnding.Play();
                     break;
@@ -546,10 +507,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Alright, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
                     break;
@@ -559,7 +518,9 @@ namespace OutfitChooserAdventureGame
                     option2Label.Text = "";
                     option1Button.Visible = false;
                     option2Button.Visible = false;
-                    shrugOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = false;
+                    limoOption1Image.Visible = false;
+                    shrugOption2Image.Visible = true;
                     Refresh();
                     SoundPlayer badFriendEnding = new SoundPlayer(Properties.Resources.badFriendEnding);
                     badFriendEnding.Play();
@@ -573,6 +534,8 @@ namespace OutfitChooserAdventureGame
                     option1Button.Visible = false;
                     option2Button.Visible = false;
                     shrugOption2Image.Visible = false;
+                    limoOption1Image.Visible = false;
+                    cakeOption2Image.Visible = true;
                     Refresh();
                     SoundPlayer goodFriendEnding = new SoundPlayer(Properties.Resources.goodFriendEnding);
                     goodFriendEnding.Play();
@@ -738,6 +701,7 @@ namespace OutfitChooserAdventureGame
                     nudeHeelsOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = false;
                     longDressOption1Image.Visible = false;
+                    limoOption1Image.Visible = false;
                     casualOption1Image.Visible = true;
                     //option 2 images
                     skirtOption2Image.Visible = false;
@@ -752,17 +716,16 @@ namespace OutfitChooserAdventureGame
                     longSleeveOption2Image.Visible = false;
                     shortDressOption2Image.Visible = false;
                     shrugOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = false;
+                    cakeOption2Image.Visible = false;
                     fancyOption2Image.Visible = true;
-                    //play opening sound
                     break;
                 case 2:
                     storyOutputLabel.Text = "So, you are going casual, but how casual??";
                     option1Label.Text = "Jeans";
                     option2Label.Text = "Sweatpants";
-
                     casualOption1Image.Visible = false;
                     jeansOption1Image.Visible = true;
-
                     fancyOption2Image.Visible = false;
                     sweatpantsOption2Image.Visible = true;
                     SoundPlayer firstChoice = new SoundPlayer(Properties.Resources.firstChoice);
@@ -772,10 +735,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Ooh, you are going fancy! What makes you feel the fanciest?";
                     option1Label.Text = "Dress";
                     option2Label.Text = "Skirt";
-
                     fancyOption2Image.Visible = false;
                     dressOption1Image.Visible = true;
-
                     casualOption1Image.Visible = false;
                     skirtOption2Image.Visible = true;
                     break;
@@ -783,10 +744,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice, jeans are a respectable choice. Now choose a top...";
                     option1Label.Text = "Graphic Tee";
                     option2Label.Text = "Plain long-sleeve";
-
                     jeansOption1Image.Visible = false;
                     teeOption1Image.Visible = true;
-
                     sweatpantsOption2Image.Visible = false;
                     longSleeveOption2Image.Visible = true;
                     break;
@@ -794,18 +753,16 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Really? Sweatpants to your best friend's birthday party... Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     jeansOption1Image.Visible = false;
                     sweatpantsOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = true;
                     break;
                 case 6:
                     storyOutputLabel.Text = "What length of dress is the vibe?";
                     option1Label.Text = "Short";
                     option2Label.Text = "Long";
-
                     dressOption1Image.Visible = false;
                     longDressOption1Image.Visible = true;
-
                     skirtOption2Image.Visible = false;
                     shortDressOption2Image.Visible = true;
                     break;
@@ -813,10 +770,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Okay, but how interesting do you want your skirt to be?";
                     option1Label.Text = "Patterned";
                     option2Label.Text = "Plain";
-
                     dressOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = true;
-
                     skirtOption2Image.Visible = false;
                     plainSkirtOption2Image.Visible = true;
                     break;
@@ -824,10 +779,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Cute! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     teeOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     longSleeveOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -835,19 +788,16 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "That's a bit boring.. Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     teeOption1Image.Visible = false;
-
                     longSleeveOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = true;
                     break;
                 case 10:
                     storyOutputLabel.Text = "Nice bold choice. Now, what type of jewelry would you like to compliment your look?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     longDressOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     shortDressOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -856,10 +806,10 @@ namespace OutfitChooserAdventureGame
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
                     option3Label.Text = "None";
-
+                    option3Label.Visible = true;
+                    option3Button.Visible = true;
                     longDressOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     shortDressOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -867,11 +817,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Exciting, now what type of top do you want?";
                     option1Label.Text = "Blouse";
                     option2Label.Text = "Sweater";
-
                     goldOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = false;
                     blouseOption1Image.Visible = true;
-
                     plainSkirtOption2Image.Visible = false;
                     silverOption2Image.Visible = false;
                     sweaterOption2Image.Visible = true;
@@ -880,11 +828,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Strong choice, now what type of top do you want?";
                     option1Label.Text = "Blouse";
                     option2Label.Text = "Sweater";
-
                     goldOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = false;
                     blouseOption1Image.Visible = true;
-
                     plainSkirtOption2Image.Visible = false;
                     silverOption2Image.Visible = false;
                     sweaterOption2Image.Visible = true;
@@ -893,11 +839,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Alright, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     teeOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     longSleeveOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
@@ -906,10 +850,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
                     break;
@@ -917,10 +859,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good bold choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -928,10 +868,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice. Now what type of footwear would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -939,10 +877,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice bold choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -950,10 +888,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -961,10 +899,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Respectable choice. Now final step, what footwear would you like to wear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -972,11 +910,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, quite fashionable! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     sneakersOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = false;
-
                     fancyBootsOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = false;
@@ -987,10 +923,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Fancy! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     blouseOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     sweaterOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -998,10 +932,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Cute! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     blouseOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     sweaterOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -1009,10 +941,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now final decision...What type of footwear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Heeled boots";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     fancyBootsOption2Image.Visible = true;
                     break;
@@ -1020,10 +950,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice choice, now finally... decision...What type of shoes?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Heeled boots";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     fancyBootsOption2Image.Visible = true;
                     break;
@@ -1031,10 +959,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now finally...What type of footwear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Flats";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     flatsOption2Image.Visible = true;
                     break;
@@ -1042,10 +968,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now finally...What type of shoes?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Flats";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     flatsOption2Image.Visible = true;
                     break;
@@ -1053,7 +977,6 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Perfect choice, you have great style! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     nudeHeelsOption1Image.Visible = false;
                     fancyBootsOption2Image.Visible = false;
                     shrugOption2Image.Visible = true;
@@ -1062,10 +985,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Perfect choice, you have such great style that your best friend rents a limo for you to arrive in! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     nudeHeelsOption1Image.Visible = false;
                     fancyBootsOption2Image.Visible = false;
-                    shrugOption2Image.Visible = true;
+                    limoOption1Image.Visible = true;
                     SoundPlayer limoEnding = new SoundPlayer(Properties.Resources.limoEnding);
                     limoEnding.Play();
                     break;
@@ -1073,10 +995,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Alright, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
                     break;
@@ -1086,7 +1006,9 @@ namespace OutfitChooserAdventureGame
                     option2Label.Text = "";
                     option1Button.Visible = false;
                     option2Button.Visible = false;
-                    shrugOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = false;
+                    limoOption1Image.Visible = false;
+                    shrugOption2Image.Visible = true;
                     Refresh();
                     SoundPlayer badFriendEnding = new SoundPlayer(Properties.Resources.badFriendEnding);
                     badFriendEnding.Play();
@@ -1100,6 +1022,8 @@ namespace OutfitChooserAdventureGame
                     option1Button.Visible = false;
                     option2Button.Visible = false;
                     shrugOption2Image.Visible = false;
+                    limoOption1Image.Visible = false;
+                    cakeOption2Image.Visible = true;
                     Refresh();
                     SoundPlayer goodFriendEnding = new SoundPlayer(Properties.Resources.goodFriendEnding);
                     goodFriendEnding.Play();
@@ -1138,6 +1062,7 @@ namespace OutfitChooserAdventureGame
                     nudeHeelsOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = false;
                     longDressOption1Image.Visible = false;
+                    limoOption1Image.Visible = false;
                     casualOption1Image.Visible = true;
                     //option 2 images
                     skirtOption2Image.Visible = false;
@@ -1152,17 +1077,16 @@ namespace OutfitChooserAdventureGame
                     longSleeveOption2Image.Visible = false;
                     shortDressOption2Image.Visible = false;
                     shrugOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = false;
+                    cakeOption2Image.Visible = false;
                     fancyOption2Image.Visible = true;
-                    //play opening sound
                     break;
                 case 2:
                     storyOutputLabel.Text = "So, you are going casual, but how casual??";
                     option1Label.Text = "Jeans";
                     option2Label.Text = "Sweatpants";
-
                     casualOption1Image.Visible = false;
                     jeansOption1Image.Visible = true;
-
                     fancyOption2Image.Visible = false;
                     sweatpantsOption2Image.Visible = true;
                     SoundPlayer firstChoice = new SoundPlayer(Properties.Resources.firstChoice);
@@ -1172,10 +1096,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Ooh, you are going fancy! What makes you feel the fanciest?";
                     option1Label.Text = "Dress";
                     option2Label.Text = "Skirt";
-
                     fancyOption2Image.Visible = false;
                     dressOption1Image.Visible = true;
-
                     casualOption1Image.Visible = false;
                     skirtOption2Image.Visible = true;
                     break;
@@ -1183,10 +1105,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice, jeans are a respectable choice. Now choose a top...";
                     option1Label.Text = "Graphic Tee";
                     option2Label.Text = "Plain long-sleeve";
-
                     jeansOption1Image.Visible = false;
                     teeOption1Image.Visible = true;
-
                     sweatpantsOption2Image.Visible = false;
                     longSleeveOption2Image.Visible = true;
                     break;
@@ -1194,18 +1114,16 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Really? Sweatpants to your best friend's birthday party... Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     jeansOption1Image.Visible = false;
                     sweatpantsOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = true;
                     break;
                 case 6:
                     storyOutputLabel.Text = "What length of dress is the vibe?";
                     option1Label.Text = "Short";
                     option2Label.Text = "Long";
-
                     dressOption1Image.Visible = false;
                     longDressOption1Image.Visible = true;
-
                     skirtOption2Image.Visible = false;
                     shortDressOption2Image.Visible = true;
                     break;
@@ -1213,10 +1131,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Okay, but how interesting do you want your skirt to be?";
                     option1Label.Text = "Patterned";
                     option2Label.Text = "Plain";
-
                     dressOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = true;
-
                     skirtOption2Image.Visible = false;
                     plainSkirtOption2Image.Visible = true;
                     break;
@@ -1224,10 +1140,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Cute! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     teeOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     longSleeveOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -1235,19 +1149,16 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "That's a bit boring.. Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     teeOption1Image.Visible = false;
-
                     longSleeveOption2Image.Visible = false;
+                    badDecisionOption2Image.Visible = true;
                     break;
                 case 10:
                     storyOutputLabel.Text = "Nice bold choice. Now, what type of jewelry would you like to compliment your look?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     longDressOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     shortDressOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -1256,10 +1167,10 @@ namespace OutfitChooserAdventureGame
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
                     option3Label.Text = "None";
-
+                    option3Label.Visible = true;
+                    option3Button.Visible = true;
                     longDressOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     shortDressOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -1267,11 +1178,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Exciting, now what type of top do you want?";
                     option1Label.Text = "Blouse";
                     option2Label.Text = "Sweater";
-
                     goldOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = false;
                     blouseOption1Image.Visible = true;
-
                     plainSkirtOption2Image.Visible = false;
                     silverOption2Image.Visible = false;
                     sweaterOption2Image.Visible = true;
@@ -1280,11 +1189,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Strong choice, now what type of top do you want?";
                     option1Label.Text = "Blouse";
                     option2Label.Text = "Sweater";
-
                     goldOption1Image.Visible = false;
                     patternedSkirtOption1Image.Visible = false;
                     blouseOption1Image.Visible = true;
-
                     plainSkirtOption2Image.Visible = false;
                     silverOption2Image.Visible = false;
                     sweaterOption2Image.Visible = true;
@@ -1293,11 +1200,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Alright, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     teeOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     longSleeveOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
@@ -1306,10 +1211,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
                     break;
@@ -1317,10 +1220,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good bold choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -1328,10 +1229,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice. Now what type of footwear would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -1339,10 +1238,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice bold choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -1350,10 +1249,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice choice. Now what type of shoes would you like?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -1361,10 +1260,10 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Respectable choice. Now final step, what footwear would you like to wear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Knee-high Boots";
-
+                    option3Label.Visible = false;
+                    option3Button.Visible = false;
                     goldOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = true;
                     break;
@@ -1372,11 +1271,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, quite fashionable! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     sneakersOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = false;
                     blackHeelsOption1Image.Visible = false;
-
                     fancyBootsOption2Image.Visible = false;
                     kneeBootsOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = false;
@@ -1387,10 +1284,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Fancy! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     blouseOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     sweaterOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -1398,10 +1293,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Cute! Now what type of jewelry would you like to wear?";
                     option1Label.Text = "Gold";
                     option2Label.Text = "Silver";
-
                     blouseOption1Image.Visible = false;
                     goldOption1Image.Visible = true;
-
                     sweaterOption2Image.Visible = false;
                     silverOption2Image.Visible = true;
                     break;
@@ -1409,10 +1302,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now final decision...What type of footwear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Heeled boots";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     fancyBootsOption2Image.Visible = true;
                     break;
@@ -1420,10 +1311,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Nice choice, now finally... decision...What type of shoes?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Heeled boots";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     fancyBootsOption2Image.Visible = true;
                     break;
@@ -1431,10 +1320,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now finally...What type of footwear?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Flats";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     flatsOption2Image.Visible = true;
                     break;
@@ -1442,10 +1329,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Good choice, now finally...What type of shoes?";
                     option1Label.Text = "Heels";
                     option2Label.Text = "Flats";
-
                     goldOption1Image.Visible = false;
                     nudeHeelsOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     flatsOption2Image.Visible = true;
                     break;
@@ -1453,7 +1338,6 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Perfect choice, you have great style! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     nudeHeelsOption1Image.Visible = false;
                     fancyBootsOption2Image.Visible = false;
                     shrugOption2Image.Visible = true;
@@ -1462,10 +1346,9 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Perfect choice, you have such great style that your best friend rents a limo for you to arrive in! Want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
-
                     nudeHeelsOption1Image.Visible = false;
                     fancyBootsOption2Image.Visible = false;
-                    shrugOption2Image.Visible = true;
+                    limoOption1Image.Visible = false;
                     SoundPlayer limoEnding = new SoundPlayer(Properties.Resources.limoEnding);
                     limoEnding.Play();
                     break;
@@ -1473,10 +1356,8 @@ namespace OutfitChooserAdventureGame
                     storyOutputLabel.Text = "Alright, now just one final choice. What type of shoes to complete the look?";
                     option1Label.Text = "Sneakers";
                     option2Label.Text = "Ankle Boots";
-
                     goldOption1Image.Visible = false;
                     sneakersOption1Image.Visible = true;
-
                     silverOption2Image.Visible = false;
                     casualBootsOption2Image.Visible = true;
                     break;
@@ -1486,7 +1367,9 @@ namespace OutfitChooserAdventureGame
                     option2Label.Text = "";
                     option1Button.Visible = false;
                     option2Button.Visible = false;
-                    shrugOption2Image.Visible = false;
+                    shrugOption2Image.Visible = true;
+                    badDecisionOption2Image.Visible = false;
+                    limoOption1Image.Visible = false;
                     Refresh();
                     SoundPlayer badFriendEnding = new SoundPlayer(Properties.Resources.badFriendEnding);
                     badFriendEnding.Play();
@@ -1500,6 +1383,8 @@ namespace OutfitChooserAdventureGame
                     option1Button.Visible = false;
                     option2Button.Visible = false;
                     shrugOption2Image.Visible = false;
+                    limoOption1Image.Visible = false;
+                    cakeOption2Image.Visible = true;
                     Refresh();
                     SoundPlayer goodFriendEnding = new SoundPlayer(Properties.Resources.goodFriendEnding);
                     goodFriendEnding.Play();

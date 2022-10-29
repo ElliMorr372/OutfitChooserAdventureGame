@@ -179,5 +179,35 @@
   <ItemGroup>
     <None Include="Resources\shrug.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badDecisionImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\753928_shoes_fashion_footwear_heel_shoe_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3023225_ankle strap pump_ankle_fashion_shoes_stylish_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6790836_accessories_clothes_dress_fashion_hanger_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4093620_hanger_laundry_cleaning_clothes_fashion_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3817151_bow_fashion_tie_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1312513_circle_cut_scissors_style_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birthdayCake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limoImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limoImage.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

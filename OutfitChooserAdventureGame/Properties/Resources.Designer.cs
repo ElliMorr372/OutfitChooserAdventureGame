@@ -61,11 +61,41 @@ namespace OutfitChooserAdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon _753928_shoes_fashion_footwear_heel_shoe_icon {
+            get {
+                object obj = ResourceManager.GetObject("_753928_shoes_fashion_footwear_heel_shoe_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badDecisionImage {
+            get {
+                object obj = ResourceManager.GetObject("badDecisionImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream badFriendEnding {
             get {
                 return ResourceManager.GetStream("badFriendEnding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap birthdayCake {
+            get {
+                object obj = ResourceManager.GetObject("birthdayCake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -223,6 +253,16 @@ namespace OutfitChooserAdventureGame.Properties {
         internal static System.IO.UnmanagedMemoryStream limoEnding {
             get {
                 return ResourceManager.GetStream("limoEnding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap limoImage {
+            get {
+                object obj = ResourceManager.GetObject("limoImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
